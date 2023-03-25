@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { whatsapp } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -72,8 +72,12 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+       <div className="flex align-center justify-center gap-4">
+        <span className={styles.sectionHeadText}><a href="https://api.whatsapp.com/send?phone=7008221952&text=Hey,I am Interested in Social Humming Service">
+          <img width={50} height={50} src={whatsapp}/>
+          </a>
+        </span>
+       </div>
 
         <form
           ref={formRef}
@@ -83,6 +87,8 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
+            disabled
+
               type='text'
               name='name'
               value={form.name}
@@ -94,6 +100,8 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
+            disabled
+
               type='email'
               name='email'
               value={form.email}
@@ -105,6 +113,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
+            disabled
               rows={7}
               name='message'
               value={form.message}
@@ -115,6 +124,7 @@ const Contact = () => {
           </label>
 
           <button
+          disabled
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >

@@ -30,10 +30,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  {
-    id: "work",
-    title: "Work",
-  },
+  // {
+  //   id: "work",
+  //   title: "Work",
+  // },
   {
     id: "contact",
     title: "Contact",
@@ -42,72 +42,53 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Product Design",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Brand and Logo",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Social Media Marketing",
+    icon: mobile,
+  },
+  {
+    title: "2D and 3D Animation",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "Photoshop",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "Figma",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "Motion X",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "Calibre Tool",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "Framer Graphs",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "Design Toolkit",
     icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
+
   {
     name: "docker",
     icon: docker,
